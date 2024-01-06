@@ -25,7 +25,7 @@ function deleteFromEmployeeByKey(employee, key){
 }
 
 function destructivelyDeleteFromEmployeeByKey (employee, key, value){
-    employee[key] = value;
+   delete employee[key] ;
 
     return employee;
 }
